@@ -11,9 +11,9 @@ function constants(){
 //constants();
 //alert(pi);
 const MY_OBJECT = { key: "value" };
-var g= MY_OBJECT.key;
+var g = MY_OBJECT.key;
 MY_OBJECT.key = "otherValue";
-g=g +MY_OBJECT.key;
+g= g +MY_OBJECT.key;
 alert(g);
 
 
