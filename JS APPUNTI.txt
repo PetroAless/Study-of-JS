@@ -3,3 +3,18 @@ defined constants in a function work only in the function's scope
 ex1:constants properties can be changed
 ex2:constants cannot have the same name as a var
 ex3:constants cannot be redeclared  
+
+
+-------------------------Grammar---------------------------
+.additions with a number and a string always create a new string
+..eg: "the answer is" + 32 = "the answer is 32"
+..but with all other operators the result is a number---
+
+.Converting strings into a number:
+..parseInt(numero,base numerica(es 2, 10, 16));
+...ex 1
+...con il parseInt è possibile ottenere un numero da una stringa 
+..oppure con l'operatore di somma prima della stringa es: (+"1.1")+(+"1.1") = 2.2
+
+.Literals
+..
