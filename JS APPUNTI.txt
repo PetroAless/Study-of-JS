@@ -1,12 +1,23 @@
-CONSTANTS
-defined constants in a function work only in the function's scope
-ex1:constants properties can be changed
-ex2:constants cannot have the same name as a var
-ex3:constants cannot be redeclared  
-
+Regole da ricordare:
+.Trailing commas è un sistema di aggiungere nuovi elementi, o proprietà al codice js, in cui il contenuto viene elencato così:
+..const myArray=[
+..    "proprietà1",
+..    "proprietà2",
+..    "proprietà3",
+..]
+..è un sistema usato soprattutto per il version control con sistemi come git.
 
 -------------------------Grammar---------------------------
-.additions with a number and a string always create a new string
+.constants
+..defined constants in a function work only in the function's scope
+..constants properties can be changed
+...ex1
+..constants cannot have the same name as a var
+...ex2
+..constants cannot be redeclared
+...ex3
+
+.Additions with a number and a string always create a new string
 ..eg: "the answer is" + 32 = "the answer is 32"
 ..but with all other operators the result is a number---
 
@@ -17,4 +28,4 @@ ex3:constants cannot be redeclared
 ..oppure con l'operatore di somma prima della stringa es: (+"1.1")+(+"1.1") = 2.2
 
 .Literals
-..
+..Array literals: viene creato un array con una lunghezza e degli elementi predefiniti, 
