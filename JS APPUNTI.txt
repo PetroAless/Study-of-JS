@@ -1,0 +1,5 @@
+CONSTANTS
+defined constants in a function work only in the function's scope
+ex1:constants properties can be changed
+ex2:constants cannot have the same name as a var
+ex3:constants cannot be redeclared  
