@@ -24,15 +24,25 @@ function literals(){
         ,           //ex of TRAILING COMMAS 0.1
         "third_Property",
     ];
-    console.log(myLiteralArray[1]);
+    console.log(myLiteralArray[3]);
+}
+function controlFlowErrorHandling(){
+    valore1=parseInt(prompt())
+    if(valore1){
+        console.log("true");
+    }else{
+        console.log("false");
+    }
+    console.log(valore1);
 }
 //greetMe("world");
 //constants();//console.log(pi);
 /*toString("100",2);
 toString("100",10);
 toString("10",16);*/
-literals();
+//literals();
 
+controlFlowErrorHandling();
 
 
 

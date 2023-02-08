@@ -35,3 +35,14 @@ Regole da ricordare:
 4.
 .Literals
 ..Array literals: viene creato un array con una lunghezza e degli elementi predefiniti, 
+..Boolean literals, Numeric literals?
+..ecc, diversi literals, sono valori fissi che possono avere variabili o simili.
+
+5.
+.Control flow e error handling
+..i falsy values, sono valori simili a "false"
+...undefined
+...null
+...0
+...NaN
+...la stringa vuota ("")
