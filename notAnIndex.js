@@ -27,23 +27,27 @@ function literals(){
     console.log(myLiteralArray[3]);
 }
 function controlFlowErrorHandling(){
-    valore1=parseInt(prompt())
-    if(valore1){
-        console.log("true");
-    }else{
-        console.log("false");
+    try {
+        valore1="";
+        if(valore1){
+            console.log("true");
+        }else{
+            console.log("false");
+            throw new Error('Cannot handle this value');
+        }
+        console.log(valore1);
+    } catch (error) { //5.1 esempio di catch
+        console.error(error);
+        console.error("Utilizzare un altro valore");
     }
-    console.log(valore1);
 }
+
 //greetMe("world");
 //constants();//console.log(pi);
 /*toString("100",2);
 toString("100",10);
 toString("10",16);*/
 //literals();
-
-controlFlowErrorHandling();
-
-
+//controlFlowErrorHandling();
 
 

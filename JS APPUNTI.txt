@@ -40,9 +40,26 @@ Regole da ricordare:
 
 5.
 .Control flow e error handling
+..try catch come sempre Ex 5.1
 ..i falsy values, sono valori simili a "false"
 ...undefined
 ...null
 ...0
 ...NaN
 ...la stringa vuota ("")
+
+
+6.
+.Loops
+..sono presenti loops come for...in (variable in object) che serve per elencare tutte le proprietà di un oggetto
+..for...of (variable of object) per elencare le variabili di un oggetto con un indice, come gli array
+..Continue e break, come negli altri linguaggi
+...continue passa alla prossima iterazione
+...break esce dal loops
+...entrambi possono essere usati con i labeled statements per 
+
+7.
+.functions
+..i paramentri delle funzioni sono pass by value, ma le proprietà di quei parametri sono pass by reference
+...anche i valori degli elementi degli array sono pass by reference
+
