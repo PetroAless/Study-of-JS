@@ -1,3 +1,4 @@
+"use strinct";
 function greetMe(stringa){
     console.log('hello '+stringa);
 }
@@ -42,6 +43,30 @@ function controlFlowErrorHandling(){
     }
 }
 
+//ex of function expression  7.2
+
+const square = function(x){
+    return x*x;
+};
+
+function cube(a,b){
+    return a(b)*b;
+}
+
+//esempio di funzione definita in base ad una condizione
+//ex 7.3
+if(Math.pi===0){
+    myFunc1 = function(myObject){
+        myObject.a="valore1";
+    };
+}else{
+    myFunc1 = function(myObject){
+        myObject.a="valore2!";
+    };
+}
+
+
+
 //greetMe("world");
 //constants();//console.log(pi);
 /*toString("100",2);
@@ -51,3 +76,36 @@ toString("10",16);*/
 //controlFlowErrorHandling();
 
 
+//console.log(cube(square,4));
+
+
+
+
+var intervalID;
+function start(){
+    const cuboOut = document.getElementById("x1");
+    const cuboIn = document.getElementById("x2");
+    var speed=6;
+    var x=0;//posizione iniziale!!!
+    var x1=Math.random()+speed;
+    var y=0;
+    var y1=Math.random()+speed;
+    intervalID = setInterval(() => {
+        if(parseFloat(cuboIn.style.left)>cuboOut.offsetWidth-cuboIn.offsetWidth)
+            x1=-Math.random()-speed;
+        if(parseFloat(cuboIn.style.left)<1)
+            x1=Math.random()+speed;
+        if(parseFloat(cuboIn.style.top)>cuboOut.offsetHeight-cuboIn.offsetHeight)
+            y1=-Math.random()-speed;
+        if(parseFloat(cuboIn.style.top)<1)
+            y1=Math.random()+speed;
+        x+=x1;
+        y+=y1;
+        cuboIn.style.left=x+"px";
+        cuboIn.style.top=y+"px";
+    }, 10);
+    
+}
+function stop(){
+    clearInterval(intervalID);
+}

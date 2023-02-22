@@ -50,7 +50,5 @@ function move (){
     }
     y+=y1;
     article[0].style.top=y+"px";
-    
-
 }
 setInterval(move, 1);

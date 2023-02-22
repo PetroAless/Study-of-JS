@@ -62,4 +62,15 @@ Regole da ricordare:
 .functions
 ..i paramentri delle funzioni sono pass by value, ma le proprietà di quei parametri sono pass by reference
 ...anche i valori degli elementi degli array sono pass by reference
+..in js le funzioni possono essere paragonate alle variabili, e possono essere passate in altre funzioni ma se definite come variabili ex 7.1
+...ovvero definite tramite function expression ex 7.2
+..le funzioni possono essere definite in base ad una condizione ex 7.3
+..le funzioni sono a tutti gli effetti oggetti
+...infatti hanno metodi come call() e apply()
+..function hoisting
+...ovvero le funzioni definite possono essere usate anche prima della loro definizione
+...a meno che non siano function expressions
+..si possono fare nested functions
+
+
 
