@@ -78,33 +78,44 @@ toString("10",16);*/
 
 //console.log(cube(square,4));
 
-
+/*
+CVVVVVVVVVVVVVVV
+    
+*/ 
 
 
 var intervalID;
+var speed=20;
+var x1=(speed*Math.random())+speed;
+var y1=(speed*Math.random())+speed;
 function start(){
     const cuboOut = document.getElementById("x1");
     const cuboIn = document.getElementById("x2");
-    var speed=6;
-    var x=0;//posizione iniziale!!!
-    var x1=Math.random()+speed;
+
+    var x=0;
     var y=0;
-    var y1=Math.random()+speed;
+
+    if(cuboIn.style.left)
+        x = parseFloat(cuboIn.style.left);
+    if(cuboIn.style.top)
+        y = parseFloat(cuboIn.style.top);
+
     intervalID = setInterval(() => {
         if(parseFloat(cuboIn.style.left)>cuboOut.offsetWidth-cuboIn.offsetWidth)
-            x1=-Math.random()-speed;
+            x1=-(speed*Math.random())-speed;
         if(parseFloat(cuboIn.style.left)<1)
-            x1=Math.random()+speed;
+            x1=(speed*Math.random())+speed;
         if(parseFloat(cuboIn.style.top)>cuboOut.offsetHeight-cuboIn.offsetHeight)
-            y1=-Math.random()-speed;
+            y1=-(speed*Math.random())-speed;
         if(parseFloat(cuboIn.style.top)<1)
-            y1=Math.random()+speed;
+            y1=(speed*Math.random())+speed;
         x+=x1;
         y+=y1;
         cuboIn.style.left=x+"px";
         cuboIn.style.top=y+"px";
+        console.log("x:"+x);
+        console.log("y:"+y);
     }, 10);
-    
 }
 function stop(){
     clearInterval(intervalID);
