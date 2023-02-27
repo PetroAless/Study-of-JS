@@ -40,7 +40,7 @@ Regole da ricordare:
 
 5.
 .Control flow e error handling
-..Si possono usare i "throw" con qualsiasi nome per una exception
+..try catch come sempre Ex 5.1..Si possono usare i "throw" con qualsiasi nome per una exception
 ..Come su java il try/catch/finally con le dovute gestioni delle eccezioni
 ..i falsy values, sono valori simili a "false"
 ...undefined
@@ -48,3 +48,30 @@ Regole da ricordare:
 ...0
 ...NaN
 ...la stringa vuota ("")
+
+
+6.
+.Loops
+..sono presenti loops come for...in (variable in object) che serve per elencare tutte le proprietà di un oggetto
+..for...of (variable of object) per elencare le variabili di un oggetto con un indice, come gli array
+..Continue e break, come negli altri linguaggi
+...continue passa alla prossima iterazione
+...break esce dal loops
+...entrambi possono essere usati con i labeled statements per 
+
+7.
+.functions
+..i paramentri delle funzioni sono pass by value, ma le proprietà di quei parametri sono pass by reference
+...anche i valori degli elementi degli array sono pass by reference
+..in js le funzioni possono essere paragonate alle variabili, e possono essere passate in altre funzioni ma se definite come variabili ex 7.1
+...ovvero definite tramite function expression ex 7.2
+..le funzioni possono essere definite in base ad una condizione ex 7.3
+..le funzioni sono a tutti gli effetti oggetti
+...infatti hanno metodi come call() e apply()
+..function hoisting
+...ovvero le funzioni definite possono essere usate anche prima della loro definizione
+...a meno che non siano function expressions
+..si possono fare nested functions
+
+
+
